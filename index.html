@@ -12,33 +12,61 @@
       color: white;
       text-align: center;
     }
+
     header {
       padding: 40px;
       background: linear-gradient(90deg, #b8860b, #d4af37);
       color: black;
-      font-size: 32px;
+      font-size: 34px;
       font-weight: bold;
     }
-    .container {
-      padding: 50px 20px;
+
+    .subtitle {
+      font-size: 18px;
+      margin-top: 10px;
     }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
     .card {
       background: #161b22;
       padding: 30px;
-      margin: 20px auto;
-      max-width: 600px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(212,175,55,0.2);
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(212,175,55,0.15);
+      transition: transform 0.3s ease;
     }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h2 {
+      color: #d4af37;
+    }
+
     .btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 15px 25px;
+      padding: 12px 22px;
       background: #d4af37;
       color: black;
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -46,25 +74,52 @@
 
 <header>
   CRM Immobiliare Progetto Immobiliare
+  <div class="subtitle">Centro operativo strategico | San Vito dei Normanni | Alto Salento</div>
 </header>
 
 <div class="container">
+
   <div class="card">
-    <h2>Dashboard Operativa</h2>
-    <p>Gestione clienti, immobili, trattative e follow-up.</p>
-    <a href="#" class="btn">Accedi</a>
+    <h2>Clienti</h2>
+    <p>Gestione lead, buyer, seller e follow-up.</p>
+    <a href="#" class="btn">Apri</a>
   </div>
 
   <div class="card">
-    <h2>Ville con Piscina</h2>
-    <p>Database strategico San Vito dei Normanni / Alto Salento.</p>
+    <h2>Immobili</h2>
+    <p>Ville con piscina, portfolio e schede proprietà.</p>
+    <a href="#" class="btn">Apri</a>
   </div>
 
   <div class="card">
-    <h2>Mike Ferry Routine</h2>
-    <p>Prospezione, KPI, lead e stabilità operativa.</p>
+    <h2>Trattative</h2>
+    <p>Offerte, negoziazioni, closing e documenti.</p>
+    <a href="#" class="btn">Apri</a>
   </div>
+
+  <div class="card">
+    <h2>Routine Mike Ferry</h2>
+    <p>Prospezione, KPI, stabilità e performance.</p>
+    <a href="#" class="btn">Apri</a>
+  </div>
+
+  <div class="card">
+    <h2>Properstar / Portali</h2>
+    <p>Promozione internazionale e marketing strategico.</p>
+    <a href="#" class="btn">Apri</a>
+  </div>
+
+  <div class="card">
+    <h2>Investitori</h2>
+    <p>Vecchio Mulino, Porto Guaceto, luxury assets.</p>
+    <a href="#" class="btn">Apri</a>
+  </div>
+
 </div>
+
+<footer>
+  Progetto Immobiliare © 2026 | CRM Strategico
+</footer>
 
 </body>
 </html>
